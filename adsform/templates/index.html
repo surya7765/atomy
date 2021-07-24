@@ -1,0 +1,502 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="website, atomy, Company, Korea, umeshatomy, umesh, umesh kumar">
+  <meta name="author" content="Yugandhar Surya">
+  <meta name="publisher" content="Yugandhar Surya">
+  <meta name="copyright" content="Yugandhar Surya">
+  <meta name="description" content="Do you want to buy a product of atomy contact us by clicking this this website link.">
+  <meta name="page-topic" content="Atomy">
+  <meta name="page-type" content="Atomy-visiting card">
+  <meta name="audience" content="Everyone">
+  <meta name="robots" content="index, follow">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&family=Noto+Sans+JP:wght@100&family=Texturina:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+  <title>Atomy Umesh Kumar</title>
+
+  <style media="screen">
+
+    .brand-logo{
+      font-size:4vw;
+    }
+      @media only screen and (max-width: 425px){
+      	/*Small smartphones [325px -> 425px]*/
+        .brand-logo{
+          font-size: 24px !important;
+        }
+        .approve-image{
+          margin-top: 80px !important;
+        }
+      }
+
+
+  </style>
+
+</head>
+<body>
+
+  <div class="scrollToTop" onclick="scrollToTop();">
+
+  </div>
+
+  <nav class="navbar-fixed"style="background-color:#342BFC">
+    <div class="container nav-wrapper" >
+      <a href="" class="brand-logo" style="color:#fff; font-family:'Texturina', sans-serif;">Umesh Kumar</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#contact-us" style="color:#fff; font-size:22px;font-family:'Texturina', sans-serif;">Contact</a></li>
+        <li><a href="#product-showcase" style="color:#fff; font-size:22px;font-family:'Texturina', sans-serif;">Products</a></li>
+        <li>
+          <div class="indian">
+            <img class="chakra" src="{% static 'images/chakra.png' %}" alt="">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav " id="mobile-demo">
+    <li><a href="#contact-us"style="color:#33312A; font-size:22px;font-family:'Texturina', sans-serif;">Contact</a></li>
+    <li><a href="#product-showcase"style="color:#33312A; font-size:22px;font-family:'Texturina', sans-serif;">Products</a></li>
+    <li>
+      <div class="indian1">
+        <img class="chakra1" src="{% static 'images/chakra.png' %}" alt="">
+      </div>
+    </li>
+  </ul>
+
+  <div id="slanted-div">
+    <div class="container">
+        <div class="row">
+          <div class="col s12 m6 atomy-header">
+            <h1 data-text="Welcome to Atomy">Welcome to Atomy</h1>
+            <p style="font-size:14px;" class="text">
+                The Basic Theory of Economy is Straightforward
+                Distribution is Key!
+                Effective Strategy where Quality meets Value
+                Atomy's MASSTIGE strategy is to provide
+                Absolute Quality products at an Absolute Price.
+            </p>
+          </div>
+          <div class="col s12 m6 atomy-header">
+            <img class="responsive-img" src="{% static 'images/atomy.png' %}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="product-showcase">
+      <div class="new-container center">
+        <div class="row">
+          <div class="col s12 m6 l3 center" style="padding:5px;">
+            <div class="glasscard">
+              <div class="imgBox">
+                <img class="img-responsive" src="{% static 'images/1.png' %}" alt="">
+                <h2 style="font-size:20px; font-weight:600;color:#33312A">Brightness cream</h2>
+              </div>
+              <div class="new-content">
+                <div class="mrp">
+                  <h3 style="font-size:18px; font-weight:600; margin-right:10px;">MRP : </h3>
+                  <span> ₹ 1,600.00</span>
+                </div>
+                  <div class="set-of">
+                    <h3 style="font-size:18px; font-weight:600; margin-right:10px;">Set of : </h3>
+                    <span>1</span>
+                  </div>
+                <a target="_blank" href="https://www.atomy.com:449/in/Home/Product/ProductView?GdsCode=D00756" class="btn white waves-effect waves-light" style="color:#342BFC">details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3 center" style="padding:5px;">
+            <div class="glasscard">
+              <div class="imgBox">
+                <img class="img-responsive" src="{% static 'images/2.png' %}" alt="">
+                <h2 style="font-size:20px; font-weight:600;color:#33312A">Toothpaste</h2>
+              </div>
+              <div class="new-content">
+                <div class="mrp">
+                  <h3 style="font-size:18px; font-weight:600; margin-right:10px;">MRP : </h3>
+                  <span> ₹ 600.00</span>
+                </div>
+                  <div class="set-of">
+                    <h3 style="font-size:18px; font-weight:600; margin-right:10px;">Set of : </h3>
+                    <span>4</span>
+                  </div>
+                <a target="_blank" href="https://www.atomy.com:449/in/Home/Product/ProductView?GdsCode=D00521" class="btn white waves-effect waves-light"style="color:#342BFC">details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3 center" style="padding:5px;">
+            <div class="glasscard">
+              <div class="imgBox">
+                <img class="img-responsive" src="{% static 'images/3.png' %}" alt="">
+                <h2 style="font-size:20px; font-weight:600;color:#33312A">Toothbrush</h2>
+              </div>
+              <div class="new-content">
+                <div class="mrp">
+                  <h3 style="font-size:18px; font-weight:600; margin-right:10px;">MRP : </h3>
+                  <span> ₹ 1,000.00</span>
+                </div>
+                  <div class="set-of">
+                    <h3 style="font-size:18px; font-weight:600; margin-right:10px;">Set of : </h3>
+                    <span>8</span>
+                  </div>
+                <a target="_blank" href="https://www.atomy.com:449/in/Home/Product/ProductView?GdsCode=D00510" class="btn white waves-effect waves-light"style="color:#342BFC">details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3 center" style="padding:5px;">
+            <div class="glasscard">
+              <div class="imgBox">
+                <img class="img-responsive" src="{% static 'images/4.png' %}" alt="">
+                <h2 style="font-size:20px; font-weight:600;color:#33312A">Nutrition Cream</h2>
+              </div>
+              <div class="new-content">
+                <div class="mrp">
+                  <h3 style="font-size:18px; font-weight:600; margin-right:10px;">MRP : </h3>
+                  <span> ₹ 2,000.00</span>
+                </div>
+                  <div class="set-of">
+                    <h3 style="font-size:18px; font-weight:600; margin-right:10px;">Set of : </h3>
+                    <span>1</span>
+                  </div>
+                <a target="_blank" href="https://www.atomy.com:449/in/Home/Product/ProductView?GdsCode=D00198" class="btn white waves-effect waves-light"style="color:#342BFC">details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <section  style="height:100vh; margin-bottom:40px;">
+    <div class="container">
+      <div class="row flex-s">
+        <div class="col s12 m6 approve-image box-a">
+          <img src="{% static 'images/approve.svg' %}" alt="">
+        </div>
+        <div class="col s12 m6 approve-text box-b">
+          <h2>High-quality products made with <span data-text="ayurveda's">ayurveda's</span></h2>
+          <p>
+            This company is from Korea whose network marketing is too big and already working with almost <span class="pulse" style="padding: 2px; border-radius: 25px;background:#342BFC;color: #fff;font-weight:500;">20 countries</span>.
+            Hurry up and be a part of this company. Want to join this company? Try contacting us.
+            We'll help you throughout the process of filling details and forms.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="new-section" style="height:100vh; background: #342BFC; ">
+    <div class="container">
+      <div class="row flex-s">
+        <div class="col s12 m6 approve-text box-b">
+          <h2 style="color:#fff;" >Company's growth is our first <span data-text="priority">priority</span></h2>
+          <p>
+            Happy employees lead to happy customers, which leads to more profit.
+            Our products will definitely provide your customers a satisfactory result
+            Since your points increase by selling more products which can lead you to become a good leader in our company.
+          </p>
+        </div>
+        <div style="padding-left:20px;" class="col s12 m6 approve-image box-a">
+          <img src="{% static 'images/improve.svg' %}" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+  </section>
+
+  <section class="contact" id="contact-us">
+    <div class="co-content">
+      <h2>Contact Us</h2>
+      <p>
+        Do you want to register for this company for <span class="pulse" style="font-weight:600;" >free</span>?
+        Either you can contact to the given details or
+        you can submit the details, we'll get in touch with you as soon as possible.
+      </p>
+    </div>
+    <div class="co-container">
+      <div class="contactInfo">
+        <div class="box">
+          <div class="icon">  <i class="material-icons">location_on</i></div>
+          <div class="new-text">
+            <h3>Address</h3>
+            <p>Chand Chaur Mathurapur <br> Samastipur,bihar </p>
+          </div>
+        </div>
+        <div class="box">
+          <a href="tel:+917488253871" style="color:#000"><div class="icon"> <i class="material-icons">phone</i></div></a>
+          <div class="new-text">
+            <h3>Call here</h3>
+            <p>+91-7488253871</a></p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"> <i class="material-icons">mail</i></div>
+          <div class="new-text">
+            <h3>Email</h3>
+            <p>umeshkmr12049@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="contactForm">
+        <form id="p-form" method="post" autocomplete="off">
+          {% csrf_token %}
+          <h2>Send message</h2>
+          <div class="inputBox">
+            {{form.name}}
+            <span>Your Name</span>
+          </div>
+          <div class="inputBox">
+            {{form.number}}
+            <span>Mobile number</span>
+          </div>
+          <div class="inputBox">
+            {{form.email}}
+            <span>Email</span>
+          </div>
+          <div class="inputBox">
+            {{form.message}}
+            <span>Type your message</span>
+          </div>
+          <div id="alertBox"></div>
+          <div class="inputBox">
+            <input type="submit" name="" value="Send">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="center swipper-slides-show" id="product-showcase">
+    <h2 class="center" style="padding-top:30px;">Product Showcase</h2>
+    <!-- Swiper -->
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://www.atomy.com:449/in/shopping/p_img/100/00785_2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://www.atomy.com:449/in/shopping/p_img/100/00645_2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://www.atomy.com:449/in/admin/userfiles/202011/best_eveningcare.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://www.atomy.com:449/in/admin/userfiles/202011/best_eveningcare.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://www.atomy.com:449/in/shopping/p_img/100/00693_2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://www.atomy.com:449/in/shopping/p_img/100/00651_2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://www.atomy.com:449/in/shopping/p_img/100/00553_2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://www.atomy.com:449/in/shopping/p_img/100/00003_2.jpeg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://www.atomy.com:449/in/shopping/p_img/100/00475_2.jpg" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="{% static 'jquery.ripples-min.js' %}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+  <script type="text/javascript">
+
+    window.addEventListener('scroll',function(){
+      var scroll = document.querySelector('.scrollToTop');
+      scroll.classList.toggle("active", window.scrollY > 500);
+    })
+
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
+    }
+
+    $(document).ready(function(){
+       $('.sidenav').sidenav();
+    });
+
+    const text = document.querySelector('.text');
+    text.innerHTML = text.textContent.replace(/\S/g,"<span>$&</span>");
+    const animation = anime.timeline({
+      targets: '.text span',
+      easing: 'easeInOutExpo',
+      loop: 1,
+    });
+
+    animation.add({
+      rotate: function() {
+        return anime.random(-360,360);
+      },
+      translateX: function() {
+        return anime.random(-50,50);
+      },
+      translateY: function() {
+        return anime.random(-50,50);
+      },
+      duration: 2000,
+      delay: anime.stagger(20),
+    })
+    .add({
+      rotate: 0,
+      translateX: 0,
+      translateY: 0,
+      duration: 2000,
+      delay: anime.stagger(20),
+    })
+
+    for (let i = 0; i < 200; i++) {
+      let bars = document.createElement('span');
+      document.querySelector('.indian').appendChild(bars);
+    }
+
+    TweenMax.from('.indian span',{
+      transform: "translateY(-100px)",
+      stagger:{
+        from: "random",
+        delay: 1,
+        amount: 10,
+      }
+    })
+
+    TweenMax.from('.chakra',0.5,{
+      opacity: 0,
+      delay: 11.5,
+    })
+    for (let i = 0; i < 200; i++) {
+      let bars = document.createElement('span');
+      document.querySelector('.indian1').appendChild(bars);
+    }
+
+    TweenMax.from('.indian1 span',{
+      transform: "translateY(1000px)",
+      stagger:{
+        from: "random",
+        delay: 1,
+        amount: 10,
+      }
+    })
+
+    TweenMax.from('.chakra1',0.5,{
+      opacity: 0,
+      delay: 11.5,
+    })
+
+    $(document).ready(function(){
+      $('.new-section').ripples({
+        dropRadius: 12,
+        perturbance: 0.04,
+        resolution: 512,
+        interactive: true,
+      });
+      $('.new-section').ripples('play')
+    })
+
+    var swiper = new Swiper(".mySwiper", {
+       effect: "coverflow",
+       grabCursor: true,
+       centeredSlides: true,
+       slidesPerView: "auto",
+       coverflowEffect: {
+         rotate: 50,
+         stretch: 0,
+         depth: 100,
+         modifier: 1,
+         slideShadows: true,
+       },
+       pagination: {
+         el: ".swiper-pagination",
+       },
+     })
+
+     const alertBox = document.getElementById('alertBox')
+     const msgForm = document.getElementById('p-form')
+
+     const name = document.getElementById('id_name')
+     const number = document.getElementById('id_number')
+     const email = document.getElementById('id_email')
+     const message = document.getElementById('id_message')
+
+     const csrf = document.getElementsByName('csrfmiddlewaretoken')
+
+     const handleAlerts = (type,text) => {
+       alertBox.innerHTML = `<div style=" background: #fff;" class="alert alert-${type}" role="alert">
+                              ${text}
+                            </div>`
+     }
+
+     // console.log(msgForm)
+
+     msgForm.addEventListener('submit',e => {
+
+       e.preventDefault()
+       const fd = new FormData()
+       fd.append('csrfmiddlewaretoken',csrf[0].value)
+       fd.append('name',name.value)
+       fd.append('number',number.value)
+       fd.append('email',email.value)
+       fd.append('message',message.value)
+
+       $.ajax({
+         type: 'POST',
+         url: '',
+         enctype: 'multipart/form-data',
+         data: fd,
+         success: function(response) {
+           const sText = `successfully saved ${response.name}`
+           handleAlerts('success', sText)
+
+           setTimeout(()=>{
+              alertBox.innerHTML = ""
+              name.value = ""
+              number.value = ""
+              email.value = ""
+              message.value = ""
+            }, 3000)
+         },
+         error: function(error){
+           handleAlerts('danger', 'oops..something went wrong')
+         },
+         cache: false,
+         contentType: false,
+         processData: false,
+       })
+     })
+
+
+  </script>
+</html>
