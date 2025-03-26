@@ -1,7 +1,7 @@
 databases:
-  - name: atomy
+  - name: atomydb
     plan: free
-    databaseName: myatomy
+    databaseName: atomydb
     user: atomy
 
 services:
