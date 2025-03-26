@@ -11,10 +11,13 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# SECRET_KEY
+SECRET_KEY = 'django-insecure-9t!6^vz!9#kz$h$8k7)@s0$e!s!x&yqo3%*4@6^b7!f5h!*g9n'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
@@ -22,9 +25,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['umeshatomy.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['umeshatomy.herokuapp.com','127.0.0.1','localhost']
 
 # CORS_ALLOWED_ORIGINS = [
 #     "http://localhost:8000",
@@ -49,6 +52,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -83,10 +87,11 @@ WSGI_APPLICATION = 'atomy.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'default': dj_database_url.config(
+        # Replace this value with your local database's connection string.
+        default='postgresql://postgres:hello123@localhost:5432/myatomy',
+        conn_max_age=600
+    )
 }
 
 
@@ -134,6 +139,13 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static')
 ]
 
+if not DEBUG:
+    # Tell Django to copy static assets into a path called `staticfiles` (this is specific to Render)
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+    # Enable the WhiteNoise storage backend, which compresses static files to reduce disk use
+    # and renames the files with unique names for each version to support long-term caching
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 # MEDIA_URL = '/media/'
 #
 # MEDIA_ROOT = os.path.join(BASE_DIR,'media')
@@ -141,18 +153,18 @@ STATICFILES_DIRS = [
 # AWS access
 
 
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
-AWS_QUERYSTRING_AUTH = False
-AWS_DEFAULT_ACL = None
-
-
-AWS_STORAGE_BUCKET_NAME = 'umeshkumaratomy'
-AWS_S3_REGION_NAME = 'ap-south-1'
-AWS_LOCATION = 'static'
+# AWS_QUERYSTRING_AUTH = False
+# AWS_DEFAULT_ACL = None
 
 
+# AWS_STORAGE_BUCKET_NAME = 'umeshkumaratomy'
+# AWS_S3_REGION_NAME = 'ap-south-1'
+# AWS_LOCATION = 'static'
 
 
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
+
+
+# STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
 # STATICFILES_STORAGE = 'storages.backends.s3boto3.S3ManifestStaticStorage'

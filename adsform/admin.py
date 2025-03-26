@@ -5,8 +5,8 @@ from .models import Message
 admin.site.register(Message)
 
 from django.contrib.admin import AdminSite
-from django.utils.translation import ugettext_lazy
+from django.utils.translation import gettext_lazy
 
 admin.site.site_header = 'Umesh Atomy Admin'
-
+    
 AdminSite.site_title = 'Umesh Atomy Admin'

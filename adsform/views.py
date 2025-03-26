@@ -10,7 +10,7 @@ def Home(request):
 
     data = {}
 
-    if request.is_ajax():
+    if request.headers.get('x-requested-with') == 'XMLHttpRequest':
         form = MessageForm(request.POST,request.FILES)
         if form.is_valid():
             form.save()
