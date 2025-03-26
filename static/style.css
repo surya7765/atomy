@@ -216,10 +216,10 @@ body{
 
 @keyframes animate-chakra {
   0%{
-    transform: translate(-50%,-50%); rotate(0deg);
+    transform: translate(-50%,-50%) rotate(0deg);
   }
   100%{
-    transform: translate(-50%,-50%);  rotate(360deg);
+    transform: translate(-50%,-50%) rotate(360deg);
   }
 }
 
@@ -253,10 +253,10 @@ body{
 
 @keyframes animate-chakra1 {
   0%{
-    transform: translate(-50%,-50%); rotate(0deg);
+    transform: translate(-50%,-50%) rotate(0deg);
   }
   100%{
-    transform: translate(-50%,-50%);  rotate(360deg);
+    transform: translate(-50%,-50%)  rotate(360deg);
   }
 }
 div .approve-image img{
