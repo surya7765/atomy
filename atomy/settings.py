@@ -25,9 +25,9 @@ SECRET_KEY = 'django-insecure-9t!6^vz!9#kz$h$8k7)@s0$e!s!x&yqo3%*4@6^b7!f5h!*g9n
 # SECURITY WARNING: keep the secret key used in production secret!
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['umeshatomy.herokuapp.com','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['*']
 
 # CORS_ALLOWED_ORIGINS = [
 #     "http://localhost:8000",
@@ -133,11 +133,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'static')
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR,'static')
+# ]
 
 if not DEBUG:
     # Tell Django to copy static assets into a path called `staticfiles` (this is specific to Render)
